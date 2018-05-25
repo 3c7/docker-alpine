@@ -147,4 +147,6 @@ echo "[i] Starting daemon..."
 # run daemon
 lighttpd -f /etc/lighttpd/lighttpd.conf -D
 
-killall tail
+killall tail > /dev/null
+
+/opt/rt4/sbin/rt-server
